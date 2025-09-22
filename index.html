@@ -1,72 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Cute Cat Website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+    <link rel="icon" type="image/png" href="paw.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Task 2: Internal CSS -->
+    <style>
+        body {
+            background-color: #FFE4E1;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* Task 5: ID selector */
+        #main-heading {
+            color: darkblue;
+            font-size: 40px;
+        }
+
+        /* Task 5: Class selector */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* Task 8: Box model */
+        img {
+            border: 3px solid #333;
+            padding: 10px;
+            margin: 15px;
+        }
+
+        /* Task 9: Positioning */
+        .relative-box {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background: lightgreen;
+            padding: 10px;
+        }
+        .absolute-box {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background: pink;
+            padding: 10px;
+        }
+
+        /* Task 10: Sizing */
+        h2 {
+            font-size: 2rem; /* relative to root */
+        }
+        h3 {
+            font-size: 1.5em; /* relative to parent */
+        }
+        img.responsive {
+            width: 50%;
+            height: auto;
+        }
+
+        /* Task 11: Float and Clear */
+        .float-left {
+            float: left;
+            width: 45%;
+            background: #d1e7dd;
+            padding: 10px;
+        }
+        .float-right {
+            float: right;
+            width: 45%;
+            background: #f8d7da;
+            padding: 10px;
+        }
+        .clear {
+            clear: both;
+        }
+
+        /* ---- New Layout ---- */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .left, .right {
+            flex: 1;
+            text-align: left;
+        }
+        .right {
+            max-width: 400px;
+            text-align: center;
+        }
+    </style>
+
+    <!-- Task 3: External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Task 6: Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-  <!-- ---------- HEADER ---------- -->
-  <div class="header">
-    <h1 id="main-heading">Welcome to My Cat World 🐱✨</h1>
-    <p class="highlight">Кавайный сайт с котиками и розовым вайбом</p>
-  </div>
 
-  <!-- ---------- MAIN LAYOUT ---------- -->
-  <div class="main">
-    <div class="content">
-      <!-- Left column -->
-      <div class="left">
-        <h2>О котиках</h2>
-        <p>Кошки — самые милые и пушистые создания! Они любят мурчать, играть и спать на солнышке.</p>
-
-        <h3>Список любимых вещей</h3>
-        <ul>
-          <li>Спать на диване</li>
-          <li>Играть с клубком</li>
-          <li>Ласкаться к хозяину</li>
-        </ul>
-
-        <h3>Таблица еды</h3>
-        <table>
-          <tr>
-            <th>Еда</th>
-            <th>Оценка</th>
-          </tr>
-          <tr>
-            <td>Рыбка</td>
-            <td>🐟🐟🐟🐟🐟</td>
-          </tr>
-          <tr>
-            <td>Корм</td>
-            <td>🐾🐾🐾</td>
-          </tr>
-        </table>
-      </div>
-
-      <!-- Right column -->
-      <div class="right">
-        <h2>Фоточки котиков</h2>
-        <img src="cat1.jpg" alt="Cat 1">
-        <img src="cat2.jpg" alt="Cat 2">
-
-        <button>Погладить котика 🐾</button>
-        <button>Дать вкусняшку 🍣</button>
-      </div>
+    <!-- Header -->
+    <div class="header">
+        <h1 id="main-heading">Kamal Kalenova</h1>
+        <h2>Computer Science IT-2409</h2>
     </div>
-  </div>
 
-  <!-- ---------- FORM ---------- -->
-  <form>
-    <h3>Напиши котику письмо 💌</h3>
-    <label>Имя: <input type="text"></label><br>
-    <label>Сообщение: <input type="text"></label><br>
-    <input type="submit" value="Отправить">
-  </form>
+    <!-- MAIN CONTENT in 2 columns -->
+    <div class="content">
+        <!-- Left column -->
+        <div class="left">
+            <!-- Task 1: Inline CSS -->
+            <p style="color: blue;">This paragraph uses inline CSS.</p>
 
-  <!-- ---------- FOOTER ---------- -->
-  <div class="footer">
-    <p>© 2025 My Cat Website | Сделано с любовью 💖</p>
-  </div>
+            <h3 id="about">About Me</h3>
+            <p class="highlight">I REALLY love to watch anime and play videogames ꉂ(˵˃ ᗜ ˂˵)</p>
+
+            <h3 id="hobbies">My Hobbies</h3>
+            <ol>
+                <li>Painting</li>
+                <li>Dancing</li>
+                <li>Taking photos</li>
+                <li>Gaming</li>
+            </ol>
+
+            <h3>Favorite Websites</h3>
+            <ul>
+                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
+            </ul>
+
+            <h3>My Weekly Schedule</h3>
+            <table border="1">
+                <tr>
+                    <th>Subject</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>Geometry</td>
+                    <td>Monday</td>
+                    <td>14:00-15:50</td>
+                </tr>
+                <tr>
+                    <td>Russian Language</td>
+                    <td>Wednesday</td>
+                    <td>14:30-15:50</td>
+                </tr>
+                <tr>
+                    <td>Computer Web Tech</td>
+                    <td>Thursday</td>
+                    <td>14:00-15:50</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Right column -->
+        <div class="right">
+            <h3 id="photo">My Photo</h3>
+            <img src="photo.png.png" alt="My Photo" class="responsive">
+
+            <br><br>
+            <button>Click Me</button>
+
+            <h3>My Mood Today</h3>
+            <p>Today I feel like a magical cat princess who overslept 😊, missed class, but still sparkles with confidence 😎❤️</p>
+
+            <h3>Contact Me</h3>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="color">Favorite Color:</label><br>
+                <input type="color" id="color" name="color"><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- Task 9: Positioning -->
+    <div class="relative-box">Relative Box</div>
+    <div class="absolute-box">Absolute Box</div>
+
+    <!-- Task 11: Float and Clear -->
+    <div class="float-left">Left Box (floated)</div>
+    <div class="float-right">Right Box (floated)</div>
+    <div class="clear"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 Kamal | Created for AITU HTML Assignment</p>
+    </div>
 </body>
 </html>
