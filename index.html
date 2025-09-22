@@ -2,101 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <link rel="icon" type="image/png" href="paw.png">
+  <title>My Cute Cat Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- ---------- HEADER ---------- -->
+  <div class="header">
+    <h1 id="main-heading">Welcome to My Cat World 🐱✨</h1>
+    <p class="highlight">Кавайный сайт с котиками и розовым вайбом</p>
+  </div>
 
-  <!-- Navigation -->
-  <header class="navbar">
-    <div class="logo">Kamal</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#hobbies">Hobbies</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- ---------- MAIN LAYOUT ---------- -->
+  <div class="main">
+    <div class="content">
+      <!-- Left column -->
+      <div class="left">
+        <h2>О котиках</h2>
+        <p>Кошки — самые милые и пушистые создания! Они любят мурчать, играть и спать на солнышке.</p>
 
-  <!-- About Section -->
-  <section id="about">
-    <h1 class="main-heading">Kamal Kalenova</h1>
-    <h2>Computer Science IT-2409</h2>
-    <p class="highlight">I REALLY love to watch anime and play videogames ꉂ(˵˃ ᗜ ˂˵)</p>
-  </section>
+        <h3>Список любимых вещей</h3>
+        <ul>
+          <li>Спать на диване</li>
+          <li>Играть с клубком</li>
+          <li>Ласкаться к хозяину</li>
+        </ul>
 
-  <!-- Hobbies Section -->
-  <section id="hobbies">
-    <h3>My Hobbies</h3>
-    <ol>
-      <li>Painting</li>
-      <li>Dancing</li>
-      <li>Taking photos</li>
-      <li>Gaming</li>
-    </ol>
-  </section>
+        <h3>Таблица еды</h3>
+        <table>
+          <tr>
+            <th>Еда</th>
+            <th>Оценка</th>
+          </tr>
+          <tr>
+            <td>Рыбка</td>
+            <td>🐟🐟🐟🐟🐟</td>
+          </tr>
+          <tr>
+            <td>Корм</td>
+            <td>🐾🐾🐾</td>
+          </tr>
+        </table>
+      </div>
 
-  <!-- Cards (Task 1) -->
-  <section class="cards">
-    <div class="card">
-      <img src="photo.png.png" alt="Me">
-      <h3>Photography</h3>
-      <p>I enjoy capturing nature and city life moments.</p>
-      <button>See more</button>
+      <!-- Right column -->
+      <div class="right">
+        <h2>Фоточки котиков</h2>
+        <img src="cat1.jpg" alt="Cat 1">
+        <img src="cat2.jpg" alt="Cat 2">
+
+        <button>Погладить котика 🐾</button>
+        <button>Дать вкусняшку 🍣</button>
+      </div>
     </div>
-    <div class="card">
-      <img src="anime.png" alt="Anime">
-      <h3>Anime</h3>
-      <p>Anime inspires my creativity and art style.</p>
-      <button>See more</button>
-    </div>
-    <div class="card">
-      <img src="gaming.png" alt="Gaming">
-      <h3>Gaming</h3>
-      <p>I play games to relax and challenge myself.</p>
-      <button>See more</button>
-    </div>
-  </section>
+  </div>
 
-  <!-- Grid Layout (Task 2) -->
-  <section class="grid-layout">
-    <header class="grid-header">Header</header>
-    <aside class="grid-sidebar">Sidebar</aside>
-    <main class="grid-main">Main Content</main>
-    <footer class="grid-footer">Footer</footer>
-  </section>
+  <!-- ---------- FORM ---------- -->
+  <form>
+    <h3>Напиши котику письмо 💌</h3>
+    <label>Имя: <input type="text"></label><br>
+    <label>Сообщение: <input type="text"></label><br>
+    <input type="submit" value="Отправить">
+  </form>
 
-  <!-- Image Gallery (Task 3) -->
-  <section id="gallery" class="gallery">
-    <img src="1.jpg" alt="">
-    <img src="2.jpg" alt="">
-    <img src="3.jpg" alt="">
-    <img src="4.jpg" alt="">
-    <img src="5.jpg" alt="">
-    <img src="6.jpg" alt="">
-    <img src="7.jpg" alt="">
-    <img src="8.jpg" alt="">
-    <img src="9.jpg" alt="">
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h3>Contact Me</h3>
-    <form>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea placeholder="Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 Kamal | Created for AITU HTML Assignment</p>
-  </footer>
-
+  <!-- ---------- FOOTER ---------- -->
+  <div class="footer">
+    <p>© 2025 My Cat Website | Сделано с любовью 💖</p>
+  </div>
 </body>
 </html>
