@@ -12,8 +12,8 @@ body {
     text-align: center;
     line-height: 1.6;
 
-    /* 🌸 твой фон */
-    background: url("your-background.png") no-repeat center center fixed;
+    
+    background: url("catbg.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
