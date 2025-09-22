@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>My First Webpage</title>
-    <link rel="icon" type="image/png" href="paw.png">
-    <link rel="stylesheet" href="style.css">
-
+<link rel="icon" type="image/png" href="paw.png">
+ <link rel="stylesheet" href="style.css">
     <!-- Task 2: Internal CSS -->
     <style>
         body {
@@ -78,22 +77,6 @@
         .clear {
             clear: both;
         }
-
-        /* ---- New Layout ---- */
-        .content {
-            display: flex;
-            justify-content: space-between;
-            gap: 30px;
-            margin-top: 20px;
-        }
-        .left, .right {
-            flex: 1;
-            text-align: left;
-        }
-        .right {
-            max-width: 400px;
-            text-align: center;
-        }
     </style>
 
     <!-- Task 3: External CSS -->
@@ -110,81 +93,72 @@
         <h2>Computer Science IT-2409</h2>
     </div>
 
-    <!-- MAIN CONTENT in 2 columns -->
-    <div class="content">
-        <!-- Left column -->
-        <div class="left">
-            <!-- Task 1: Inline CSS -->
-            <p style="color: blue;">This paragraph uses inline CSS.</p>
+    <!-- Task 1: Inline CSS -->
+    <p style="color: blue;">This paragraph uses inline CSS.</p>
 
-            <h3 id="about">About Me</h3>
-            <p class="highlight">I REALLY love to watch anime and play videogames ꉂ(˵˃ ᗜ ˂˵)</p>
+    <h3 id="about">About Me</h3>
+    <p class="highlight">I REALLY love to watch anime and play videogames ꉂ(˵˃ ᗜ ˂˵)</p>
 
-            <h3 id="hobbies">My Hobbies</h3>
-            <ol>
-                <li>Painting</li>
-                <li>Dancing</li>
-                <li>Taking photos</li>
-                <li>Gaming</li>
-            </ol>
+    <h3 id="hobbies">My Hobbies</h3>
+    <ol>
+        <li>Painting</li>
+        <li>Dancing</li>
+        <li>Taking photos</li>
+        <li>Gaming</li>
+    </ol>
 
-            <h3>Favorite Websites</h3>
-            <ul>
-                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-                <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
-            </ul>
+    <h3>Favorite Websites</h3>
+    <ul>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+        <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
+    </ul>
 
-            <h3>My Weekly Schedule</h3>
-            <table border="1">
-                <tr>
-                    <th>Subject</th>
-                    <th>Day</th>
-                    <th>Time</th>
-                </tr>
-                <tr>
-                    <td>Geometry</td>
-                    <td>Monday</td>
-                    <td>14:00-15:50</td>
-                </tr>
-                <tr>
-                    <td>Russian Language</td>
-                    <td>Wednesday</td>
-                    <td>14:30-15:50</td>
-                </tr>
-                <tr>
-                    <td>Computer Web Tech</td>
-                    <td>Thursday</td>
-                    <td>14:00-15:50</td>
-                </tr>
-            </table>
-        </div>
+    <h3 id="photo">My Photo</h3>
+    <img src="photo.png.png" alt="My Photo" class="responsive">
 
-        <!-- Right column -->
-        <div class="right">
-            <h3 id="photo">My Photo</h3>
-            <img src="photo.png.png" alt="My Photo" class="responsive">
+    <br><br>
+    <button>Click Me</button>
 
-            <br><br>
-            <button>Click Me</button>
+    <h3>My Weekly Schedule</h3>
+    <table border="1" align="center">
+        <tr>
+            <th>Subject</th>
+            <th>Day</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Geometry</td>
+            <td>Monday</td>
+            <td>14:00-15:50</td>
+        </tr>
+        <tr>
+            <td>Russian Language</td>
+            <td>Wednesday</td>
+            <td>14:30-15:50</td>
+        </tr>
+        <tr>
+            <td>Computer Web Tech</td>
+            <td>Thursday</td>
+            <td>14:00-15:50</td>
+        </tr>
+    </table>
 
-            <h3>My Mood Today</h3>
-            <p>Today I feel like a magical cat princess who overslept 😊, missed class, but still sparkles with confidence 😎❤️</p>
+    <h3>My Mood Today</h3>
+    <p>Today I feel like a magical cat princess who overslept 😊, missed class, but still sparkles with confidence 😎❤️</p>
 
-            <h3>Contact Me</h3>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+    <h3>Contact Me</h3>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
 
-                <label for="color">Favorite Color:</label><br>
-                <input type="color" id="color" name="color"><br><br>
+        <label for="color">Favorite Color:</label><br>
+        <input type="color" id="color" name="color"><br><br>
 
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </div>
+        <input type="submit" value="Submit">
+    </form>
 
     <!-- Task 9: Positioning -->
     <div class="relative-box">Relative Box</div>
