@@ -1,0 +1,43 @@
+/* External CSS file */
+
+/* General link styles */
+a {
+    color: darkred;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+/* Header and footer blocks */
+.header, .footer {
+    background-color: #f0f8ff;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.main-content {
+    background-color: #fffaf0;
+    padding: 20px;
+}
