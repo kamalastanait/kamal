@@ -1,177 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Webpage</title>
-<link rel="icon" type="image/png" href="paw.png">
- <link rel="stylesheet" href="style.css">
-    <!-- Task 2: Internal CSS -->
-    <style>
-        body {
-            background-color: #FFE4E1;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 30px;
-        }
-
-        /* Task 5: ID selector */
-        #main-heading {
-            color: darkblue;
-            font-size: 40px;
-        }
-
-        /* Task 5: Class selector */
-        .highlight {
-            background-color: yellow;
-            font-weight: bold;
-        }
-
-        /* Task 8: Box model */
-        img {
-            border: 3px solid #333;
-            padding: 10px;
-            margin: 15px;
-        }
-
-        /* Task 9: Positioning */
-        .relative-box {
-            position: relative;
-            top: 10px;
-            left: 20px;
-            background: lightgreen;
-            padding: 10px;
-        }
-        .absolute-box {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            background: pink;
-            padding: 10px;
-        }
-
-        /* Task 10: Sizing */
-        h2 {
-            font-size: 2rem; /* relative to root */
-        }
-        h3 {
-            font-size: 1.5em; /* relative to parent */
-        }
-        img.responsive {
-            width: 50%;
-            height: auto;
-        }
-
-        /* Task 11: Float and Clear */
-        .float-left {
-            float: left;
-            width: 45%;
-            background: #d1e7dd;
-            padding: 10px;
-        }
-        .float-right {
-            float: right;
-            width: 45%;
-            background: #f8d7da;
-            padding: 10px;
-        }
-        .clear {
-            clear: both;
-        }
-    </style>
-
-    <!-- Task 3: External CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Task 6: Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/png" href="paw.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <div class="header">
-        <h1 id="main-heading">Kamal Kalenova</h1>
-        <h2>Computer Science IT-2409</h2>
-    </div>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Kamal</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Task 1: Inline CSS -->
-    <p style="color: blue;">This paragraph uses inline CSS.</p>
-
-    <h3 id="about">About Me</h3>
+  <!-- About Section -->
+  <section id="about">
+    <h1 class="main-heading">Kamal Kalenova</h1>
+    <h2>Computer Science IT-2409</h2>
     <p class="highlight">I REALLY love to watch anime and play videogames ꉂ(˵˃ ᗜ ˂˵)</p>
+  </section>
 
-    <h3 id="hobbies">My Hobbies</h3>
+  <!-- Hobbies Section -->
+  <section id="hobbies">
+    <h3>My Hobbies</h3>
     <ol>
-        <li>Painting</li>
-        <li>Dancing</li>
-        <li>Taking photos</li>
-        <li>Gaming</li>
+      <li>Painting</li>
+      <li>Dancing</li>
+      <li>Taking photos</li>
+      <li>Gaming</li>
     </ol>
+  </section>
 
-    <h3>Favorite Websites</h3>
-    <ul>
-        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-        <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
-    </ul>
+  <!-- Cards (Task 1) -->
+  <section class="cards">
+    <div class="card">
+      <img src="photo.png.png" alt="Me">
+      <h3>Photography</h3>
+      <p>I enjoy capturing nature and city life moments.</p>
+      <button>See more</button>
+    </div>
+    <div class="card">
+      <img src="anime.png" alt="Anime">
+      <h3>Anime</h3>
+      <p>Anime inspires my creativity and art style.</p>
+      <button>See more</button>
+    </div>
+    <div class="card">
+      <img src="gaming.png" alt="Gaming">
+      <h3>Gaming</h3>
+      <p>I play games to relax and challenge myself.</p>
+      <button>See more</button>
+    </div>
+  </section>
 
-    <h3 id="photo">My Photo</h3>
-    <img src="photo.png.png" alt="My Photo" class="responsive">
+  <!-- Grid Layout (Task 2) -->
+  <section class="grid-layout">
+    <header class="grid-header">Header</header>
+    <aside class="grid-sidebar">Sidebar</aside>
+    <main class="grid-main">Main Content</main>
+    <footer class="grid-footer">Footer</footer>
+  </section>
 
-    <br><br>
-    <button>Click Me</button>
+  <!-- Image Gallery (Task 3) -->
+  <section id="gallery" class="gallery">
+    <img src="1.jpg" alt="">
+    <img src="2.jpg" alt="">
+    <img src="3.jpg" alt="">
+    <img src="4.jpg" alt="">
+    <img src="5.jpg" alt="">
+    <img src="6.jpg" alt="">
+    <img src="7.jpg" alt="">
+    <img src="8.jpg" alt="">
+    <img src="9.jpg" alt="">
+  </section>
 
-    <h3>My Weekly Schedule</h3>
-    <table border="1" align="center">
-        <tr>
-            <th>Subject</th>
-            <th>Day</th>
-            <th>Time</th>
-        </tr>
-        <tr>
-            <td>Geometry</td>
-            <td>Monday</td>
-            <td>14:00-15:50</td>
-        </tr>
-        <tr>
-            <td>Russian Language</td>
-            <td>Wednesday</td>
-            <td>14:30-15:50</td>
-        </tr>
-        <tr>
-            <td>Computer Web Tech</td>
-            <td>Thursday</td>
-            <td>14:00-15:50</td>
-        </tr>
-    </table>
-
-    <h3>My Mood Today</h3>
-    <p>Today I feel like a magical cat princess who overslept 😊, missed class, but still sparkles with confidence 😎❤️</p>
-
+  <!-- Contact -->
+  <section id="contact">
     <h3>Contact Me</h3>
     <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-
-        <label for="color">Favorite Color:</label><br>
-        <input type="color" id="color" name="color"><br><br>
-
-        <input type="submit" value="Submit">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
     </form>
+  </section>
 
-    <!-- Task 9: Positioning -->
-    <div class="relative-box">Relative Box</div>
-    <div class="absolute-box">Absolute Box</div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Kamal | Created for AITU HTML Assignment</p>
+  </footer>
 
-    <!-- Task 11: Float and Clear -->
-    <div class="float-left">Left Box (floated)</div>
-    <div class="float-right">Right Box (floated)</div>
-    <div class="clear"></div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p>© 2025 Kamal | Created for AITU HTML Assignment</p>
-    </div>
 </body>
 </html>
