@@ -1,207 +1,134 @@
-/* ---------- General reset ---------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kamal’s Flex & Grid Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* ---------- Body & Background ---------- */
-body {
-    font-family: 'Comic Sans MS', 'Poppins', cursive, sans-serif;
-    color: #4a2c2a;
-    text-align: center;
-    line-height: 1.6;
+  <!-- Task 0: Navigation Bar (Flexbox) -->
+  <header class="navbar">
+    <div class="logo">🐱 Kamal</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-     background: url("catbg.jpg") no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-}
-}
+  <!-- About Section -->
+  <section id="about" class="header">
+    <h1 id="main-heading">Kamal Kalenova</h1>
+    <h2>Computer Science IT-2409</h2>
+    <p class="highlight">I REALLY love to watch anime and play videogames ꉂ(˵˃ ᗜ ˂˵)</p>
+  </section>
 
-/* ---------- Headings ---------- */
-#main-heading {
-    color: #ff69b4;
-    font-size: 3rem;
-    text-shadow: 2px 2px #fff0f5;
-    margin-bottom: 20px;
-}
+  <!-- Hobbies -->
+  <section id="hobbies" class="main">
+    <h3>My Hobbies</h3>
+    <ol>
+      <li>Painting</li>
+      <li>Dancing</li>
+      <li>Taking photos</li>
+      <li>Gaming</li>
+    </ol>
+  </section>
 
-h2, h3, h4 {
-    color: #ff85c1;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
+  <!-- Task 1: Flexbox Cards -->
+  <section class="cards">
+    <div class="card">
+      <img src="photo.png.png" alt="Me">
+      <h3>Photography</h3>
+      <p>I enjoy capturing nature and city life moments.</p>
+      <button>See more</button>
+    </div>
+    <div class="card">
+      <img src="anime.png" alt="Anime">
+      <h3>Anime</h3>
+      <p>Anime inspires my creativity and art style.</p>
+      <button>See more</button>
+    </div>
+    <div class="card">
+      <img src="gaming.png" alt="Gaming">
+      <h3>Gaming</h3>
+      <p>I play games to relax and challenge myself.</p>
+      <button>See more</button>
+    </div>
+  </section>
 
-/* ---------- Paragraphs ---------- */
-p {
-    font-size: 1.1rem;
-    color: #5c3c3c;
-    margin: 10px 0;
-}
+  <!-- Task 2: Grid Layout with Areas -->
+  <section class="grid-layout">
+    <header class="grid-header">Header</header>
+    <aside class="grid-sidebar">Sidebar</aside>
+    <main class="grid-main">Main Content</main>
+    <footer class="grid-footer">Footer</footer>
+  </section>
 
-p.highlight {
-    background-color: #ffe4f2;
-    border: 2px dashed #ffb6c1;
-    padding: 8px;
-    border-radius: 12px;
-    display: inline-block;
-}
+  <!-- Task 3: Image Gallery (Grid) -->
+  <section id="gallery" class="gallery">
+    <img src="1.jpg" alt="cat1">
+    <img src="2.jpg" alt="cat2">
+    <img src="3.jpg" alt="cat3">
+    <img src="4.jpg" alt="cat4">
+    <img src="5.jpg" alt="cat5">
+    <img src="6.jpg" alt="cat6">
+    <img src="7.jpg" alt="cat7">
+    <img src="8.jpg" alt="cat8">
+    <img src="9.jpg" alt="cat9">
+  </section>
 
-/* ---------- Links ---------- */
-a {
-    color: #ff5ca2;
-    text-decoration: none;
-    transition: 0.3s;
-}
+  <!-- Task 4: Portfolio Page combining Flex + Grid -->
+  <section class="portfolio">
+    <header class="portfolio-header">
+      <h2>My Portfolio</h2>
+    </header>
+    <div class="portfolio-grid">
+      <!-- Projects -->
+      <div class="projects">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Website with Flexbox</p>
+          <button>View</button>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Responsive Grid Gallery</p>
+          <button>View</button>
+        </div>
+      </div>
+      <!-- Info Sidebar -->
+      <aside class="info">
+        <h3>About Me</h3>
+        <p>I’m a CS student who loves cats 🐾</p>
+      </aside>
+    </div>
+  </section>
 
-a:hover {
-    color: #ff1493;
-    text-decoration: underline;
-}
+  <!-- Contact Form -->
+  <section id="contact" class="main">
+    <h3>Contact Me</h3>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email">
 
-/* ---------- Lists ---------- */
-ol, ul {
-    list-style: none;
-    padding: 0;
-}
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Your message..."></textarea>
 
-li::before {
-    content: "🐾 ";
-}
+      <input type="submit" value="Send">
+    </form>
+  </section>
 
-/* ---------- Images ---------- */
-img {
-    border: 4px solid #ffb6c1;
-    border-radius: 20px;
-    margin: 15px 0;
-    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
-    width: 200px;
-}
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Kamal | Created for AITU HTML Assignment</p>
+  </footer>
 
-/* ---------- Buttons ---------- */
-button, input[type="submit"] {
-    background-color: #ff9ecd;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    margin: 10px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: 0.3s;
-}
-
-button:hover, input[type="submit"]:hover {
-    background-color: #ff69b4;
-    transform: scale(1.05);
-}
-
-/* ---------- Tables ---------- */
-table {
-    border-collapse: collapse;
-    margin: 20px auto;
-    background: #fffafc;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(255, 182, 193, 0.4);
-}
-
-th, td {
-    border: 1px solid #ffb6c1;
-    padding: 12px 18px;
-}
-
-th {
-    background-color: #ffedf6;
-    color: #ff5ca2;
-}
-
-/* ---------- Form ---------- */
-form {
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #fff0f6;
-    border: 2px solid #ffb6c1;
-    border-radius: 15px;
-    width: 300px;
-    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
-}
-
-input, label {
-    margin: 5px;
-}
-
-/* ---------- Layout with divs ---------- */
-.header, .footer, .main {
-    padding: 20px;
-    margin: 10px;
-    border-radius: 12px;
-}
-
-.header {
-    background-color: rgba(255, 240, 245, 0.8);
-}
-
-.main {
-    background-color: rgba(255, 228, 225, 0.8);
-}
-
-.footer {
-    background-color: rgba(255, 182, 193, 0.8);
-}
-
-/* ---------- Box Model Example ---------- */
-.box {
-    border: 3px solid #ffb6c1;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 15px;
-}
-
-/* ---------- Positioning ---------- */
-.position-static {
-    position: static;
-    background-color: #fff0f5;
-}
-
-.position-relative {
-    position: relative;
-    top: 10px;
-    left: 20px;
-    background-color: #ffe4e1;
-}
-
-.position-absolute {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #ffb6c1;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-/* ---------- Float and Clear ---------- */
-.float-left {
-    float: left;
-    width: 45%;
-    background-color: #fff0f5;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px;
-}
-
-.float-right {
-    float: right;
-    width: 45%;
-    background-color: #ffe4f2;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px;
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
+</body>
+</html>
