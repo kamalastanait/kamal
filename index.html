@@ -3,175 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <title>My First Webpage</title>
-<link rel="icon" type="image/png" href="paw.png">
- <link rel="stylesheet" href="style.css">
-    <!-- Task 2: Internal CSS -->
+    <link rel="icon" type="image/png" href="paw.png">
+    <link rel="stylesheet" href="style.css">
+
     <style>
         body {
             background-color: #FFE4E1;
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 30px;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
 
-        /* Task 5: ID selector */
+        /* Контейнер */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Заголовок */
+        header {
+            background: #d1e7ff;
+            padding: 20px;
+            text-align: center;
+        }
+
         #main-heading {
             color: darkblue;
             font-size: 40px;
+            margin: 0;
         }
 
-        /* Task 5: Class selector */
+        /* Секции */
+        section {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        /* Подсветка текста */
         .highlight {
             background-color: yellow;
             font-weight: bold;
         }
 
-        /* Task 8: Box model */
+        /* Фото */
         img {
             border: 3px solid #333;
             padding: 10px;
-            margin: 15px;
+            margin: 15px auto;
+            display: block;
+            border-radius: 10px;
         }
 
-        /* Task 9: Positioning */
-        .relative-box {
-            position: relative;
-            top: 10px;
-            left: 20px;
-            background: lightgreen;
-            padding: 10px;
-        }
-        .absolute-box {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            background: pink;
-            padding: 10px;
-        }
-
-        /* Task 10: Sizing */
-        h2 {
-            font-size: 2rem; /* relative to root */
-        }
-        h3 {
-            font-size: 1.5em; /* relative to parent */
-        }
         img.responsive {
-            width: 50%;
+            width: 60%;
             height: auto;
         }
 
-        /* Task 11: Float and Clear */
-        .float-left {
-            float: left;
-            width: 45%;
-            background: #d1e7dd;
-            padding: 10px;
+        /* Таблица */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
         }
-        .float-right {
-            float: right;
-            width: 45%;
-            background: #f8d7da;
+        table th, table td {
             padding: 10px;
+            border: 1px solid #333;
+            text-align: center;
         }
-        .clear {
-            clear: both;
+        table th {
+            background: #eee;
+        }
+
+        /* Форма */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        form input, form label {
+            font-size: 1rem;
+        }
+        form input[type="submit"] {
+            background: darkblue;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background: navy;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #d1e7ff;
+            margin-top: 20px;
         }
     </style>
-
-    <!-- Task 3: External CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Task 6: Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
 
-    <!-- Header -->
-    <div class="header">
+    <header>
         <h1 id="main-heading">Kamal Kalenova</h1>
         <h2>Computer Science IT-2409</h2>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <p style="color: blue;">This paragraph uses inline CSS.</p>
+            <h3 id="about">About Me</h3>
+            <p class="highlight">I REALLY love to watch anime and play videogames ꉂ(˵˃ ᗜ ˂˵)</p>
+        </section>
+
+        <section>
+            <h3 id="hobbies">My Hobbies</h3>
+            <ol>
+                <li>Painting</li>
+                <li>Dancing</li>
+                <li>Taking photos</li>
+                <li>Gaming</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Favorite Websites</h3>
+            <ul>
+                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 id="photo">My Photo</h3>
+            <img src="photo.png.png" alt="My Photo" class="responsive">
+            <button>Click Me</button>
+        </section>
+
+        <section>
+            <h3>My Weekly Schedule</h3>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>Geometry</td>
+                    <td>Monday</td>
+                    <td>14:00-15:50</td>
+                </tr>
+                <tr>
+                    <td>Russian Language</td>
+                    <td>Wednesday</td>
+                    <td>14:30-15:50</td>
+                </tr>
+                <tr>
+                    <td>Computer Web Tech</td>
+                    <td>Thursday</td>
+                    <td>14:00-15:50</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>My Mood Today</h3>
+            <p>Today I feel like a magical cat princess who overslept 😊, missed class, but still sparkles with confidence 😎❤️</p>
+        </section>
+
+        <section>
+            <h3>Contact Me</h3>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color">
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
     </div>
 
-    <!-- Task 1: Inline CSS -->
-    <p style="color: blue;">This paragraph uses inline CSS.</p>
-
-    <h3 id="about">About Me</h3>
-    <p class="highlight">I REALLY love to watch anime and play videogames ꉂ(˵˃ ᗜ ˂˵)</p>
-
-    <h3 id="hobbies">My Hobbies</h3>
-    <ol>
-        <li>Painting</li>
-        <li>Dancing</li>
-        <li>Taking photos</li>
-        <li>Gaming</li>
-    </ol>
-
-    <h3>Favorite Websites</h3>
-    <ul>
-        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-        <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
-    </ul>
-
-    <h3 id="photo">My Photo</h3>
-    <img src="photo.png.png" alt="My Photo" class="responsive">
-
-    <br><br>
-    <button>Click Me</button>
-
-    <h3>My Weekly Schedule</h3>
-    <table border="1" align="center">
-        <tr>
-            <th>Subject</th>
-            <th>Day</th>
-            <th>Time</th>
-        </tr>
-        <tr>
-            <td>Geometry</td>
-            <td>Monday</td>
-            <td>14:00-15:50</td>
-        </tr>
-        <tr>
-            <td>Russian Language</td>
-            <td>Wednesday</td>
-            <td>14:30-15:50</td>
-        </tr>
-        <tr>
-            <td>Computer Web Tech</td>
-            <td>Thursday</td>
-            <td>14:00-15:50</td>
-        </tr>
-    </table>
-
-    <h3>My Mood Today</h3>
-    <p>Today I feel like a magical cat princess who overslept 😊, missed class, but still sparkles with confidence 😎❤️</p>
-
-    <h3>Contact Me</h3>
-    <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-
-        <label for="color">Favorite Color:</label><br>
-        <input type="color" id="color" name="color"><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
-
-    <!-- Task 9: Positioning -->
-    <div class="relative-box">Relative Box</div>
-    <div class="absolute-box">Absolute Box</div>
-
-    <!-- Task 11: Float and Clear -->
-    <div class="float-left">Left Box (floated)</div>
-    <div class="float-right">Right Box (floated)</div>
-    <div class="clear"></div>
-
-    <!-- Footer -->
-    <div class="footer">
+    <footer>
         <p>© 2025 Kamal | Created for AITU HTML Assignment</p>
-    </div>
+    </footer>
+
 </body>
 </html>
