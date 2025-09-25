@@ -1,205 +1,183 @@
-/* ---------- General reset ---------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ---------- Body & Background ---------- */
+/* ===== Общие стили ===== */
 body {
-    font-family: 'Comic Sans MS', 'Poppins', cursive, sans-serif;
-    color: #4a2c2a;
-    text-align: center;
-    line-height: 1.6;
-
-    
+  margin: 0;
+  font-family: "Comic Sans MS", "Arial Rounded MT Bold", Arial, sans-serif;
+  background: #fff0f6; /* нежно-розовый фон */
+  color: #444;
+  line-height: 1.6;
     background: url("catbg.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover;
 }
 
-/* ---------- Headings ---------- */
-#main-heading {
-    color: #ff69b4;
-    font-size: 3rem;
-    text-shadow: 2px 2px #fff0f5;
-    margin-bottom: 20px;
+/* ===== Layout ===== */
+.layout {
+  display: flex;
+  min-height: 100vh;
 }
 
-h2, h3, h4 {
-    color: #ff85c1;
-    margin-top: 15px;
-    margin-bottom: 10px;
+/* ===== Sidebar (меню) ===== */
+.sidebar {
+  width: 220px;
+  background: #ffcce7; /* розовый */
+  color: #5c2a50;
+  padding: 20px;
+  border-right: 3px dashed #ff99cc;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
-/* ---------- Paragraphs ---------- */
-p {
-    font-size: 1.1rem;
-    color: #5c3c3c;
-    margin: 10px 0;
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #b30086;
 }
 
-p.highlight {
-    background-color: #ffe4f2;
-    border: 2px dashed #ffb6c1;
-    padding: 8px;
-    border-radius: 12px;
-    display: inline-block;
+.sidebar img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 3px solid #ff99cc;
 }
 
-/* ---------- Links ---------- */
-a {
-    color: #ff5ca2;
-    text-decoration: none;
-    transition: 0.3s;
+.sidebar ul {
+  list-style: none;
+  padding: 0;
 }
 
-a:hover {
-    color: #ff1493;
-    text-decoration: underline;
+.sidebar ul li {
+  margin: 10px 0;
 }
 
-/* ---------- Lists ---------- */
-ol, ul {
-    list-style: none;
-    padding: 0;
+.sidebar ul li a {
+  color: #b30086;
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  border-radius: 8px;
+  background: #ffe6f2;
+  transition: all 0.3s ease;
+  font-weight: bold;
 }
 
-li::before {
-    content: "🐾 ";
+.sidebar ul li a:hover {
+  background: #ffb3da;
+  color: white;
+  transform: scale(1.05);
 }
 
-/* ---------- Images ---------- */
-img {
-    border: 4px solid #ffb6c1;
-    border-radius: 20px;
-    margin: 15px 0;
-    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
-    width: 200px;
+/* ===== Контент ===== */
+.content {
+  flex: 1;
+  padding: 30px;
 }
 
-/* ---------- Buttons ---------- */
-button, input[type="submit"] {
-    background-color: #ff9ecd;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    margin: 10px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: 0.3s;
+/* Заголовки */
+header h1 {
+  margin: 0;
+  color: #b30086;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px #ffd6eb;
+}
+header h2 {
+  margin: 0;
+  color: #ff4da6;
 }
 
-button:hover, input[type="submit"]:hover {
-    background-color: #ff69b4;
-    transform: scale(1.05);
+/* Секции */
+section {
+  background: #fff;
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+  border: 2px solid #ffe6f2;
+  transition: transform 0.2s ease;
+}
+section:hover {
+  transform: translateY(-3px);
 }
 
-/* ---------- Tables ---------- */
+section h3 {
+  margin-top: 0;
+  color: #ff4da6;
+  border-bottom: 2px dashed #ff99cc;
+  padding-bottom: 5px;
+}
+
+/* Таблица */
 table {
-    border-collapse: collapse;
-    margin: 20px auto;
-    background: #fffafc;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(255, 182, 193, 0.4);
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
-
 th, td {
-    border: 1px solid #ffb6c1;
-    padding: 12px 18px;
+  padding: 10px;
+  border: 1px solid #ffb3da;
+  text-align: center;
 }
-
 th {
-    background-color: #ffedf6;
-    color: #ff5ca2;
+  background: #ffe6f2;
+  color: #b30086;
+}
+td {
+  background: #fff9fc;
 }
 
-/* ---------- Form ---------- */
+/* Фото */
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 4px solid #ffb3da;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.5);
+}
+
+/* Кнопки */
+button, input[type="submit"] {
+  background: #ff66b2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+button:hover, input[type="submit"]:hover {
+  background: #ff3385;
+  transform: scale(1.05);
+}
+
+/* Форма */
 form {
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #fff0f6;
-    border: 2px solid #ffb6c1;
-    border-radius: 15px;
-    width: 300px;
-    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-
 input, label {
-    margin: 5px;
+  font-size: 1rem;
+}
+input[type="text"], input[type="email"], input[type="color"] {
+  padding: 8px;
+  border: 2px solid #ffb3da;
+  border-radius: 8px;
+  outline: none;
+}
+input:focus {
+  border-color: #ff66b2;
+  box-shadow: 0 0 6px #ffb3da;
 }
 
-/* ---------- Layout with divs ---------- */
-.header, .footer, .main {
-    padding: 20px;
-    margin: 10px;
-    border-radius: 12px;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #ffcce7;
+  color: #b30086;
+  border-top: 3px dashed #ff99cc;
+  border-radius: 0 0 15px 15px;
 }
 
-.header {
-    background-color: rgba(255, 240, 245, 0.8);
-}
-
-.main {
-    background-color: rgba(255, 228, 225, 0.8);
-}
-
-.footer {
-    background-color: rgba(255, 182, 193, 0.8);
-}
-
-/* ---------- Box Model Example ---------- */
-.box {
-    border: 3px solid #ffb6c1;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 15px;
-}
-
-/* ---------- Positioning ---------- */
-.position-static {
-    position: static;
-    background-color: #fff0f5;
-}
-
-.position-relative {
-    position: relative;
-    top: 10px;
-    left: 20px;
-    background-color: #ffe4e1;
-}
-
-.position-absolute {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #ffb6c1;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-/* ---------- Float and Clear ---------- */
-.float-left {
-    float: left;
-    width: 45%;
-    background-color: #fff0f5;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px;
-}
-
-.float-right {
-    float: right;
-    width: 45%;
-    background-color: #ffe4f2;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px;
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
