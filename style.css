@@ -1,17 +1,12 @@
 
 body {
- 
-  background-image: url("catbg.jpg"); 
-  background-size: cover;       
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
-  background-position: center;  
+ margin: 0;
   font-family: "Comic Sans MS", cursive; 
+  background: url("catbg.jpg") no-repeat center center fixed;
+  background-size: cover;  
+ color: #e08ccb;
 }
 
-
- 
-}
 
 /* ===== Layout ===== */
 .layout {
